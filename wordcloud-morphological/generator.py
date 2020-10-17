@@ -27,7 +27,7 @@ class WordCloudGenerator:
 
 
 if __name__ == '__main__':
-    from cloud.morphological_analyst.mecab import MecabAnalyst
+    from cloud.morphological_analysts.mecab import MecabAnalyst
     from cloud.analsis_source.tweets import SearchedRecentTweetsSource
 
     generator = WordCloudGenerator()
