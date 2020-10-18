@@ -3,10 +3,10 @@ TODO: word_classesの値検証をしたほうがいい
 """
 import MeCab
 
-from wordcloud_morphological.const.wordclass import ALL
+from morphological_view.const.wordclass import ALL
 
 
-class MecabTextAnalyst:
+class MecabAnalyst:
     """
     mecabによって、テキストを形態素分析で単語に分解するクラス
     """
