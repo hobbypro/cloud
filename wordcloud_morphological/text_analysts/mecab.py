@@ -12,9 +12,13 @@ class MecabTextAnalyst:
     """
     def __init__(self, text, word_classes=None):
         self._mecab = MeCab.Tagger("-Ochasen")
-        self.text = text
+        self._text = text
         self._first_node = self._mecab.parseToNode(text)
         self.word_classes = word_classes if word_classes else ALL
+
+    @property
+    def text(self):
+        return self._text
 
     def analyze_to_list(self):
         output = []
