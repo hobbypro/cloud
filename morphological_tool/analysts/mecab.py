@@ -3,7 +3,7 @@ TODO: word_classesの値検証をしたほうがいい
 """
 import MeCab
 
-from morphological_view.const.wordclass import ALL
+from morphological_tool.const.wordclass import ALL
 
 
 class MecabAnalyst:
@@ -16,7 +16,7 @@ class MecabAnalyst:
         self._first_node = self._mecab.parseToNode(text)
         self.word_classes = word_classes if word_classes else ALL
 
-    def analyze_to_list(self):
+    def to_words(self):
         output = []
         node = self._first_node
         while node:
