@@ -1,0 +1,6 @@
+NOUN = '名詞'
+VERB = '動詞'
+ADJECTIVE = '形容詞'
+ADVERB = '副詞'
+
+ALL = [NOUN, VERB, ADJECTIVE, ADVERB]

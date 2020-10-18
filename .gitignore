@@ -1,4 +1,9 @@
+# external
 venv/
 .idea/
 
+# python
 *__pycache__*
+
+# pytest
+pytest_cache
